@@ -25,7 +25,6 @@ export default {
           relatedResource: this.viaResource,
         });
         await this.refreshResourcesList();
-        console.log('hello');
         Nova.success(this.__('novaSortable.reorderSuccessful'));
       } catch (e) {
         if (e && e.response && e.response.data && e.response.data.canNotReorder) {
